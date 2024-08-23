@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'c4a94dca62283ae266d93d3b7e7668ec4c876d9'; 
+const API_KEY = import.meta.env.VITE_GEOCODE_KEY; 
 const BASE_URL = 'https://api.geocod.io/v1.6/geocode';
 
 export const getCoordinates = async (city) => {
